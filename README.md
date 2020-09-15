@@ -20,5 +20,5 @@ project, or downloading the zip file.
     need to unzip and enjoy my UI Clone.
 
 To vizualize the project just enter the folder downloaded and in the `html/`
-folder you just need to open the `index.html` in your browser, and again.
+folder you just need to open the `index.html` in your browser. Again,
 Enjoy ❤
