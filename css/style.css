@@ -95,6 +95,7 @@ main.main {
 
     background: var(--background-default);
     flex: 30%;
+    height: 100%;
 
 }
 
@@ -210,17 +211,20 @@ header.header > .options > * {
 
 }
 
-header.header > .options > button:focus {
+header.header > .options > *:focus {
 
     background: rgb(var(--shadow-rgb), .1);
 
 }
 
-header.header > .options > button > img {
+header.header > .options > * > img {
 
     width: 24px;
     height: 24px;
     filter: var(--panel-icon);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -238,6 +242,7 @@ header.header > .options > button + button {
     align-items: center;
     background: var(--search-container-background);
     transition: 0.4s;
+    border-bottom: 1px solid var(--border-list);
 
 }
 
@@ -290,10 +295,33 @@ header.header > .options > button + button {
 
 }
 
+::-webkit-scrollbar {
+
+    width: 6px;
+    height: 6px;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background-color: #00000033;
+    border-radius: 8px;
+
+}
+
+::-webkit-scrollbar-track {
+
+    background-color: #ffffff1a;
+
+}
+
 .side-bar > .chats {
 
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    overflow-y: auto;
+    height: calc(100% - 110px);
 
 }
 
@@ -397,5 +425,27 @@ header.header > .options > button + button {
     font-weight: 400;
     flex-grow: 1;
     text-align: left;
+
+}
+
+@media screen and (max-width: 1440px) {
+
+    main.main {
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+}
+
+@media screen and (max-height: 740px) {
+
+    .default-page > .intro-img > img {
+
+        width: 250px;
+        height: 250px;
+
+    }
 
 }
