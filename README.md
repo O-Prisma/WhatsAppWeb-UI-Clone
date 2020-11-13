@@ -6,6 +6,9 @@ It uses html, css and js vanilla, no framework or lib was used.
 
 # Instalation / Vizualization
 
+### Media query not finished, so you can have screen issues with the code.
+You can acess the live preview in: [Live Preview](https://htmlpreview.github.io/?https://github.com/O-Prisma/WhatsAppWeb-UI-Clone/blob/master/html/index.html)
+
 You can download using the green button making a git clone of the
 project, or downloading the zip file.
 
